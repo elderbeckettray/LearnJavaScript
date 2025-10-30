@@ -1,0 +1,12 @@
+.outer {
+
+}
+
+.inner {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

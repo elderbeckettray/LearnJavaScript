@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.red {
+    background-color: #c71226;
+    height: 100px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blue {
+    background-color: #0d1b88;
+    height: 100px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.green {
+    background-color: #397327;
+    height: 100px;
+    display: block;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM App</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/custom.css">
+</head>
+<body>
+    <a href="src/html/calendar.html" target="_blank">View Calendar</a>
+    <!-- container for one or more progress items -->
+    <div id="progressList">
+        <div class="progress-item">
+            <div class="outside" aria-label="progress">
+                <div class="inside">
+                    <div class="progress">
+                        <span class="progress-numerator">1</span> / <span class="progress-denominator">5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- controls specific to this progress item -->
+            <div class="controls" aria-hidden="false">
+                <label>
+                    Numerator
+                    <input class="numeratorInput" type="number" min="0" value="1" inputmode="numeric" />
+                </label>
+                <label>
+                    Denominator
+                    <input class="denominatorInput" type="number" min="1" value="5" inputmode="numeric" />
+                </label>
+            </div>
+            <div class="details">
+                <input type="text" class="title-input" placeholder="Enter title..." value="Progress Item 1" />
+                <textarea class="description" placeholder="Add a description...">Track your progress here...</textarea>
+            </div>
+            <button class="removeBtn" type="button" aria-label="Remove progress">Remove</button>
+        </div>
+    </div>
+
+    <p>
+        <button id="addProgressBtn" type="button">Add progress bar</button>
+    </p>
+
+    <script src="src/script/script.js"></script>
+</body>
+</html>

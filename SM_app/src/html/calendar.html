@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="../css/calendar.css">
+</head>
+<body>
+    <a href="../../index.html" class="home-btn" aria-label="Go to home page">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+        </a>
+        <div class="app-container">
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button id="prevMonth" aria-label="Previous month">&lt;</button>
+                    <div class="date-input">
+                    <input type="date" id="dateInput" aria-label="Select date">
+                </div>
+                <button id="nextMonth" aria-label="Next month">&gt;</button>
+            </div>
+            
+            <div class="current-month">
+                <h2 id="monthDisplay"></h2>
+            </div>
+
+            <div class="calendar">
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days" id="daysGrid"></div>
+            </div>
+        </div>
+
+        <div class="events-panel">
+            <div class="events-header">
+                <h3>Events for <span id="selectedDateDisplay">No date selected</span></h3>
+                <button id="addEventBtn" class="add-event-btn">Add Event</button>
+            </div>
+            <div id="eventsList" class="events-list">
+                <!-- Events will be added here dynamically -->
+            </div>
+            <div id="addEventForm" class="add-event-form hidden">
+                <input type="text" id="eventTitle" placeholder="Event title">
+                <div class="time-inputs">
+                    <input type="time" id="eventStartTime">
+                    <input type="time" id="eventEndTime">
+                </div>
+                <div class="color-picker">
+                    <label for="eventColor">Event Color:</label>
+                    <input type="color" id="eventColor" value="#4CAF50">
+                </div>
+                <textarea id="eventDescription" placeholder="Event description"></textarea>
+                <div class="form-buttons">
+                    <button type="button" id="saveEventBtn">Save</button>
+                    <button type="button" id="cancelEventBtn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script/calendar.js"></script>
+</body>
+</html>
